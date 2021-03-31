@@ -7,14 +7,15 @@ terraform {
   }
 }
 
-provider "aws" {
-  region = var.region
+locals {
+  name           = "testRdsQuicksight"
+  name_lowercase = "test_rds_quicksight"
+  region         = "us-east-1"
+  tags = {
+    Name = "testRdsQuicksight"
+  }
 }
 
-resource "aws_vpc" "rds_vpc" {
-  cidr_block = "10.0.0.0/16"
-
-  tags = {
-    Name = "testRds"
-  }
+provider "aws" {
+  region = var.region
 }
