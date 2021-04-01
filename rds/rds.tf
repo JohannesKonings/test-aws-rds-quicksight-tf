@@ -1,6 +1,6 @@
 resource "aws_db_subnet_group" "rds_aws_db_subnet_group" {
   name       = local.name_lowercase
-  subnet_ids = [aws_subnet.rds_aws_subnet_private.id]
+  subnet_ids = [aws_subnet.rds_aws_subnet_private_a.id, aws_subnet.rds_aws_subnet_private_b.id]
 
   tags       = local.tags
 }
@@ -15,9 +15,10 @@ resource "aws_db_instance" "rds_aws_db_instance" {
   username               = var.rds_username
   password               = var.rds_password
   parameter_group_name   = "default.postgres12"
+  db_subnet_group_name   = aws_db_subnet_group.rds_aws_db_subnet_group.id
   vpc_security_group_ids = [aws_security_group.rds_security_group.id]
   skip_final_snapshot    = true
-  publicly_accessible    = true
+  publicly_accessible    = false
 
   tags = local.tags
 }

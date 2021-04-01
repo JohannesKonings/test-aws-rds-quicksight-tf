@@ -4,3 +4,4 @@ variable "region" {
 }
 variable "rds_username" {}
 variable "rds_password" {}
+variable "my_ip" {}
