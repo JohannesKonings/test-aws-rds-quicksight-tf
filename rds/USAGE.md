@@ -16,6 +16,7 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| my\_ip | n/a | `any` | n/a | yes |
 | rds\_password | n/a | `any` | n/a | yes |
 | rds\_username | n/a | `any` | n/a | yes |
 | region | AWS Region | `string` | n/a | yes |
