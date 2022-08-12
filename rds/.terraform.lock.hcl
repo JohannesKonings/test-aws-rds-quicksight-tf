@@ -2,19 +2,21 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/hashicorp/aws" {
-  version = "3.34.0"
+  version     = "4.26.0"
+  constraints = "~> 4.26.0"
   hashes = [
-    "h1:cpABmNuXxN8It75FCiw8ejDoIYgTEQ95m2lGizMYA2s=",
-    "zh:003272229bd19bb63d6e77bc3d684268c417a151dfaee01c40b40e21cdd8bb0f",
-    "zh:103cacc1f3d97dfb7e9dd1e1905b075f92d9bd8aed434f811e8111788b648a57",
-    "zh:63a43c6e5fb2e5ad59ea068bede5c6bb54358affd32163d72785473a15440427",
-    "zh:6648af39a318c85eb336e2fb3ec1a01c5ffe8d75cc51686c37e892dd6f6a8974",
-    "zh:71ac8f6d5d61e5dee90099fd4fc1bb5bcd8ccb674eb6e7cd58d20757f7cecd12",
-    "zh:73baae4aa5bc0af12917e3bb17e1086050d25cdf7ba604f7fc422653c99f884c",
-    "zh:7d920ac05c45e77c59c49e0dd0cb010d64202c5a2fdfde6d9efe3dc61e396c97",
-    "zh:8a495e49f8fcbe276a74911f9ca48381533686ff71a9d4f7027bb9109769b639",
-    "zh:8ab9769581dfc1675c645e33e7ab8fea6ad1acc9e232eeda823070447e5ecaf1",
-    "zh:a170ecc560d49c251f4bebb6d6a82ff3637ae16a0f779a53489d4a64ddd1ee6a",
-    "zh:d9178201057b62666691ec206d1fbe09965bcfea532085b4e31f46073bf5898f",
+    "h1:J2vjvMMPm+3no0E5fVn8u9zPR0XcGA89jnBP3pqZj+A=",
+    "zh:0579b105ae471894846fbd740bc9f10b2bd8a48860d8e640b4a9b53fb7d63ffe",
+    "zh:0ce445cfbffb6c0eee9e0e2a95850b5749d56aa8211b95a686c24dc2847a36ea",
+    "zh:41f0cf0810363cea4e54f3d9c452f2eb77123bcdaacc18b978c825496168cae2",
+    "zh:431a7e967b5c9d7ebde6c714abedd9464be6a62f7eafa1808a86a8bd92851317",
+    "zh:4afebd3c3a8c0646f0874493840b6f8c82f7f4302780faec5c7b0c616077eebe",
+    "zh:7f077662efc8d7b91ef604999daf6b45a968cb2f5d8c4512a00d2feb4db05a7a",
+    "zh:9a58d1ef049ccaa9615fe5722ba815065f45d172f8bc656ffdbab4ca16f6b786",
+    "zh:9b12af85486a96aedd8d7984b0ff811a4b42e3d88dad1a3fb4c0b580d04fa425",
+    "zh:9d30b70a2daa0d94661590f6533e07071d2c7052b8279f05090f1bf037f56607",
+    "zh:b75f88be5d048849a632895d43b836ed1693031e586cd873ee915b5d3cf4fae6",
+    "zh:c57ac099b01fe49dd4e1e4674a06f61029fa6316e4f92a6a2a3bdc0444b371f9",
+    "zh:cb48a175ebb2a12fecae7dc6580bf88fbcf5408cdc53f3cf057150ebe9144034",
   ]
 }
